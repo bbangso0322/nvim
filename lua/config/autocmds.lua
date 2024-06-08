@@ -41,3 +41,4 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.api.nvim_buf_set_lines(0, 0, -1, true, modified)
     end
 })
+
