@@ -1,3 +1,5 @@
+-- window에서 사용할 경우 window환경에서 사용할  gcc설치가 필요함
+-- minGW 설치 하자
 return {
     {
         "nvim-treesitter/nvim-treesitter",
