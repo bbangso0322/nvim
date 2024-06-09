@@ -20,7 +20,6 @@ return {
                     "tsserver",
                     "clangd",
                     "cmake",
-                    "autotools_ls",
                     "cssls",
                     "jdtls",
                     "pyright"
