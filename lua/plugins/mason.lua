@@ -5,7 +5,10 @@ return {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
-        end
+        end,
+        dependencies = {
+            "williamboman/mason-lspconfig.nvim",
+        }
     },
     {
         "williamboman/mason-lspconfig.nvim",
@@ -26,6 +29,9 @@ return {
     },
     {
         "neovim/nvim-lspconfig",
+        dependencies = {
+            "williamboman/mason.nvim",
+        },
         config = function()
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
