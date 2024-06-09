@@ -28,7 +28,6 @@ return {
         "neovim/nvim-lspconfig",
         config = function()
             local lspconfig = require("lspconfig")
-            print("lsp config")
             lspconfig.lua_ls.setup({})
             lspconfig.tsserver.setup({})
             lspconfig.clangd.setup({})
@@ -37,8 +36,6 @@ return {
             lspconfig.cssls.setup({})
             lspconfig.jdtls.setup({})
             lspconfig.pyright.setup({})
-
-            print("config is completed!")
 
             map("n", "K", vim.lsp.buf.hover, { desc = "hover" })
             map("n", "gd", vim.lsp.buf.definition, {})
