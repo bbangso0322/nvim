@@ -13,7 +13,6 @@ return {
         local cmp = require("cmp")
         vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
-        print("cmp called!")
         cmp.setup({
             snippet = {
                 expand = function(args)
