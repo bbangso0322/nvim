@@ -8,11 +8,10 @@ return {
         "hrsh7th/cmp-path",
     },
     
-
     config = function()
+        print("cmp called!")
         local cmp = require("cmp")
         vim.opt.completeopt = { "menu", "menuone", "noselect" }
-
         cmp.setup({
             snippet = {
                 expand = function(args)
@@ -42,9 +41,7 @@ return {
                 end,
                 ['<CR>'] = cmp.mapping.confirm({ select = true }),
                 ['<C-e>'] = cmp.mapping.abort(),
-                ['<Esc>'] = cmp.mapping.close(),
-                ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-                ['<C-f>'] = cmp.mapping.scroll_docs(4),
+                ['<C-f>'] = cmp.mapping.close(),
             }),
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
