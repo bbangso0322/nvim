@@ -9,7 +9,6 @@ return {
     },
     
     config = function()
-        print("cmp called!")
         local cmp = require("cmp")
         vim.opt.completeopt = { "menu", "menuone", "noselect" }
         cmp.setup({
