@@ -1,5 +1,5 @@
 -- window에서 사용할 경우 window환경에서 사용할  gcc설치가 필요함
--- minGW 설치 하자
+-- Cygwin 환경 구성하여 gcc
 -- git 필요
 return {
     {
