@@ -1,5 +1,6 @@
 -- window에서 사용할 경우 window환경에서 사용할  gcc설치가 필요함
--- Cygwin 환경 구성하여 gcc
+-- chocoletey로 mingw 설치
+-- https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support 참조
 -- git 필요
 return {
     {
