@@ -46,4 +46,8 @@ return {
             }
         })
     end,
+    keys = {
+        { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Neo-tree toggle", },
+        { "<leader>r", "<cmd>Neotree reveal<cr>", desc = "Neo-tree reveal", }
+    }
 }
