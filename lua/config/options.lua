@@ -18,6 +18,8 @@ opt.encoding = "utf-8" -- 내부에서 사용하는 문자 인코딩
 opt.fileencoding = "utf-8"  -- 저장할 때 사용할 문자 인코딩
 opt.fileencodings = "utf-8" -- 파일을 열 때 사용할 인코딩 우선순위
 opt.equalalways = false -- split 시 화면 균등분할 끄기
+opt.fileformat = "unix" -- 줄바꿈 \r\n, \n 차이
+opt.fileformats = "unix,dos"
 
 opt.list = true -- 공백, tab 시각적으로 보이도록함
 opt.scrolloff = 4 -- 아래, 위 끝 커서 주변으로 4줄 추가 텍스트를 보여줌
